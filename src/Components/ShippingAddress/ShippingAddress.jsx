@@ -37,7 +37,7 @@ export default function ShippingAddress() {
             token: localStorage.getItem("token"),
           },
           params: {
-            url: "hhttps://fresh-cart-liart-xi.vercel.app",
+            url: window.location.origin,
           },
         }
       )
