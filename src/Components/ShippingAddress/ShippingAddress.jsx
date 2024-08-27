@@ -37,7 +37,7 @@ export default function ShippingAddress() {
             token: localStorage.getItem("token"),
           },
           params: {
-            url: window.location.origin,
+            url: window.location.origin + "/#",
           },
         }
       )
