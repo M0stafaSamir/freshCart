@@ -23,6 +23,7 @@ import ForgetPassword from "./Components/ForgetPassword/ForgetPassword";
 import VerifyCode from "./Components/VerifyCode/VerifyCode";
 import ResetPassword from "./Components/ResetPassword/ResetPassword";
 import WishList from "./Components/WishList/WishList";
+import AllOrders from "./Components/AllOrders/AllOrders";
 
 function App() {
   const router = createHashRouter([
@@ -91,10 +92,10 @@ function App() {
           ),
         },
         {
-          path: "products",
+          path: "allorders",
           element: (
             <ProtectedRoute>
-              <Products />{" "}
+              <AllOrders />{" "}
             </ProtectedRoute>
           ),
         },
