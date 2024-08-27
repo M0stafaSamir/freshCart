@@ -36,11 +36,7 @@ export default function Navbar() {
                         Home
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to={"/products"} className="text-black">
-                        Products
-                      </NavLink>
-                    </li>
+
                     <li>
                       <NavLink to={"/categories"} className="text-black">
                         Categories
