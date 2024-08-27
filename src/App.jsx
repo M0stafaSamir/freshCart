@@ -92,10 +92,10 @@ function App() {
           ),
         },
         {
-          path: "allorders",
+          path: "#/allorders",
           element: (
             <ProtectedRoute>
-              <AllOrders />{" "}
+              <AllOrders />
             </ProtectedRoute>
           ),
         },
