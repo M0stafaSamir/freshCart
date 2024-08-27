@@ -11,7 +11,7 @@
 }
 
 .active {
-  @apply text-lg font-bold text-yellow-700;
+  @apply text-lg font-bold text-green-500;
 }
 
 .body {

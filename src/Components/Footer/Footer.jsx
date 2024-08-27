@@ -19,7 +19,7 @@ export default function Footer() {
                   placeholder="Email Address"
                 />
 
-                <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-green-400 rounded-lg hover:bg-green-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                   Subscribe
                 </button>
               </div>
@@ -77,14 +77,6 @@ export default function Footer() {
           <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700" />
 
           <div className="flex items-center justify-between">
-            <a href="#">
-              <img
-                className="w-auto h-7"
-                src="https://merakiui.com/images/full-logo.svg"
-                alt=""
-              />
-            </a>
-
             <div className="flex -mx-2">
               <a
                 href="#"

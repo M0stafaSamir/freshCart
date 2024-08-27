@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 
+import logo from "../../assets/freshcart-logo.svg";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,43 +19,45 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="bg-gray-800 fixed w-full">
+      <header className="bg-white shadow-md fixed w-full z-50">
         <nav className="container mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center ">
               <div className="text-white font-bold text-xl me-8">
-                <a href="#">Fresh Cart</a>
+                <a href="#">
+                  <img src={logo} alt="logo" />
+                </a>
               </div>
               {userToken && (
                 <div className="hidden md:block">
                   <ul className="flex items-center space-x-8">
                     <li>
-                      <NavLink to={"/"} className="text-white">
+                      <NavLink to={"/"} className="text-black">
                         Home
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/products"} className="text-white">
+                      <NavLink to={"/products"} className="text-black">
                         Products
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/categories"} className="text-white">
+                      <NavLink to={"/categories"} className="text-black">
                         Categories
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/brands"} className="text-white">
+                      <NavLink to={"/brands"} className="text-black">
                         Brands
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/cart"} className="text-white">
+                      <NavLink to={"/cart"} className="text-black">
                         Cart
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/wishList"} className="text-white">
+                      <NavLink to={"/wishList"} className="text-black">
                         WishList
                       </NavLink>
                     </li>
@@ -81,7 +85,7 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center gap-2">
-              <div className="text-white social-media">
+              <div className="text-black social-media">
                 <i className="fa-brands fa-facebook-f mx-1"></i>
                 <i className="fa-brands fa-twitter mx-1"></i>
                 <i className="fa-brands fa-linkedin mx-1"></i>
@@ -113,7 +117,8 @@ export default function Navbar() {
                     <li>
                       <button
                         onClick={signOut}
-                        className="block px-4 py-2 text-white">
+                        className="block px-4 py-2 text-red-500 font-bold">
+                        <i className="fa-solid fa-right-from-bracket"></i>{" "}
                         SignOut
                       </button>
                     </li>
